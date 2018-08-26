@@ -9,11 +9,12 @@
 import UIKit
 import Foundation
 import TwilioVideo
+import CoreMotion
 
 class ViewController: UIViewController {
 
     // MARK: View Controller Members
-    
+    let motionManager = CMMotionManager()
     // Configure access token manually for testing, if desired! Create one manually in the console
     // at https://www.twilio.com/console/video/runtime/testing-tools
     var accessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTSzU2NTViZjQwNzJhNjJjMjU4YzczMjM2MDU3ZDA1MTU0LTE1MzUyNjI5NTkiLCJpc3MiOiJTSzU2NTViZjQwNzJhNjJjMjU4YzczMjM2MDU3ZDA1MTU0Iiwic3ViIjoiQUNiN2IxYWUyZmExNTc3M2M2NGUyZjIzNTkyODk4NWU0NSIsImV4cCI6MTUzNTI2NjU1OSwiZ3JhbnRzIjp7ImlkZW50aXR5IjoidGVzdDIiLCJ2aWRlbyI6e319fQ.dMWEvJVZ0OIAjE0fTxceL45rGDbgoXozv0jpeeZdUgs"
@@ -57,6 +58,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var modeButton: UIButton!
     
+    @IBOutlet weak var accelButton: UIButton!
     // MARK: UIViewController
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -88,14 +90,29 @@ class ViewController: UIViewController {
         self.viewButton.isHidden = true
         
         self.modeButton.isHidden = true
-        
+        //accel is currently disabled
+        self.accelButton.isHidden = true
         self.roomTextField.autocapitalizationType = .none
         self.roomTextField.delegate = self
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(ViewController.dismissKeyboard))
         self.view.addGestureRecognizer(tap)
+        
+        motionManager.deviceMotionUpdateInterval = 1
+        if (motionManager.isAccelerometerAvailable){
+            motionManager.startAccelerometerUpdates(
+                to: OperationQueue.current!,
+                withHandler: {(accelData: CMAccelerometerData?, errorOC: Error?) in
+                    self.outputAccelData(acceleration: accelData!.acceleration)
+            })
+        }
     }
     
+    func outputAccelData(acceleration: CMAcceleration){
+        print("x-val: " + "\(acceleration.x)")
+        print("y-val: " + "\(acceleration.y)")
+        print("z-val: " + "\(acceleration.z)")
+    }
     func setupRemoteVideoView() {
         // Creating `TVIVideoView` programmatically
         self.remoteView = TVIVideoView.init(frame: CGRect.zero, delegate:self)
@@ -292,6 +309,58 @@ class ViewController: UIViewController {
         self.moveButton.isHidden = !self.moveButton.isHidden
         self.viewButton.isHidden = !self.viewButton.isHidden
     }
+    
+    /*
+    @IBAction func accelPress(_ sender: UIButton) {
+        if (motionManager.isAccelerometerAvailable){
+            motionManager.startAccelerometerUpdates(to: OperationQueue.current!){
+                (data , error) in
+                var lastState = "x"
+                guard let accelerometerData = data else { return }
+                if (accelerometerData.acceleration.z >= -0.15 && accelerometerData.acceleration.x <= 0.15 && accelerometerData.acceleration.x >= -0.15 && lastState != "i") {
+                    //Tup
+                    self.sendActionRequest(input: "x")
+                    usleep(500000)
+                    self.sendActionRequest(input: "i")
+                    lastState = "i"
+                    usleep(500000)
+                } else if (accelerometerData.acceleration.z <= -0.80 && accelerometerData.acceleration.x <= 0.15 && accelerometerData.acceleration.x >= -0.15 && lastState != "k"){
+                    //Tdown
+                    self.sendActionRequest(input: "x")
+                     usleep(500000)
+                    self.sendActionRequest(input: "k")
+                    lastState = "k"
+                    usleep(500000)
+
+                } else if (accelerometerData.acceleration.x >= 0.20 && accelerometerData.acceleration.z <= -0.50 && lastState != "l"){
+                    //pLeft
+                    self.sendActionRequest(input: "x")
+                     usleep(500000)
+                    self.sendActionRequest(input: "l")
+                    lastState = "l"
+                    usleep(500000)
+                    
+                } else if (accelerometerData.acceleration.x <= -0.20 && accelerometerData.acceleration.z <= -0.50 && lastState != "j"){
+                    //pRight
+                    self.sendActionRequest(input: "x")
+                    usleep(500000)
+                    self.sendActionRequest(input: "j")
+                    lastState = "j"
+                    usleep(500000)
+                }
+            }
+        }
+    }
+    
+    
+    @IBAction func accelRelease(_ sender: UIButton) {
+        if (motionManager.isAccelerometerAvailable){
+            motionManager.stopAccelerometerUpdates()
+            self.sendActionRequest(input: "x")
+        }
+    }
+ 
+ */
     
     func sendActionRequest(input: String) {
         // Set up the URL request
