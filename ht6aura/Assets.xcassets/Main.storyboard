@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="J0k-35-tDc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="J0k-35-tDc">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="nZR-qd-fY9">
             <objects>
-                <viewController storyboardIdentifier="ViewController" id="jSN-F6-Q4K" customClass="ViewController" customModule="ht6aura" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ViewController" id="jSN-F6-Q4K" customClass="ViewController" customModule="VideoQuickStart" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8oD-ke-cGW"/>
                         <viewControllerLayoutGuide type="bottom" id="tZu-uw-hgi"/>
@@ -177,13 +175,13 @@
                                 <rect key="frame" x="57" y="507" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="MOVE" image="move"/>
+                                <state key="normal" title="MOVE" image="Move"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kkR-gC-opg">
                                 <rect key="frame" x="283" y="505" width="40" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <state key="normal" title="VIEW" image="view"/>
+                                <state key="normal" title="VIEW" image="View"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Gm-27-weF">
                                 <rect key="frame" x="7" y="31" width="96" height="30"/>
@@ -256,7 +254,7 @@
         <!--Settings Table View Controller-->
         <scene sceneID="oJs-oy-MpX">
             <objects>
-                <tableViewController id="uXW-85-THo" customClass="SettingsTableViewController" customModule="ht6aura" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="uXW-85-THo" customClass="SettingsTableViewController" customModule="VideoQuickStart" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="8km-Y6-TLM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -321,6 +319,7 @@
         <image name="Down" width="408" height="362"/>
         <image name="Hangup" width="744" height="744"/>
         <image name="Left" width="362" height="408"/>
+        <image name="Move" width="1325" height="444"/>
         <image name="Mute" width="744" height="744"/>
         <image name="PLeft" width="1548" height="2471"/>
         <image name="PRight" width="1548" height="2471"/>
@@ -328,7 +327,6 @@
         <image name="TDown" width="2471" height="1548"/>
         <image name="TUp" width="2471" height="1548"/>
         <image name="Up" width="409" height="362"/>
-        <image name="move" width="1325" height="444"/>
-        <image name="view" width="1217" height="444"/>
+        <image name="View" width="1217" height="444"/>
     </resources>
 </document>

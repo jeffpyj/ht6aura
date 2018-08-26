@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D51A702EAC46BF227563039 /* libPods-TwilioVideo-ht6aura.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AD591AEE2BD22993FD0F6A4 /* libPods-TwilioVideo-ht6aura.a */; };
 		1F50AA2921323C2400464581 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50AA2821323C2400464581 /* AppDelegate.swift */; };
 		1F50AA2B21323C2400464581 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50AA2A21323C2400464581 /* ViewController.swift */; };
 		1F50AA2E21323C2400464581 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F50AA2C21323C2400464581 /* Main.storyboard */; };
 		1F50AA3021323C2500464581 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F50AA2F21323C2500464581 /* Assets.xcassets */; };
 		1F50AA3321323C2500464581 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F50AA3121323C2500464581 /* LaunchScreen.storyboard */; };
-		1F50AA3E21323C2500464581 /* ht6auraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50AA3D21323C2500464581 /* ht6auraTests.swift */; };
-		1F50AA4921323C2600464581 /* ht6auraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F50AA4821323C2600464581 /* ht6auraUITests.swift */; };
+		1F553B9921324641002F7BA6 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F553B9621324640002F7BA6 /* SettingsTableViewController.swift */; };
+		1F553B9A21324641002F7BA6 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F553B9721324641002F7BA6 /* Settings.swift */; };
+		1F553B9B21324641002F7BA6 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F553B9821324641002F7BA6 /* Utils.swift */; };
+		1F553B9D213246DD002F7BA6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F553B9C213246DD002F7BA6 /* SystemConfiguration.framework */; };
+		1F553B9F213246EA002F7BA6 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F553B9E213246EA002F7BA6 /* CoreMedia.framework */; };
+		1F553BA1213246F5002F7BA6 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F553BA0213246F5002F7BA6 /* GLKit.framework */; };
+		1F553BA321324700002F7BA6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F553BA2213246FF002F7BA6 /* CoreTelephony.framework */; };
+		1F553BA521324709002F7BA6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F553BA421324709002F7BA6 /* AVFoundation.framework */; };
+		1F553BA721324718002F7BA6 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F553BA621324718002F7BA6 /* AudioToolbox.framework */; };
+		1F553BA921324720002F7BA6 /* VideoToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F553BA821324720002F7BA6 /* VideoToolbox.framework */; };
+		1F553BAB2132472E002F7BA6 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F553BAA2132472D002F7BA6 /* libc++.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +52,21 @@
 		1F50AA3221323C2500464581 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F50AA3421323C2500464581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F50AA3921323C2500464581 /* ht6auraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ht6auraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F50AA3D21323C2500464581 /* ht6auraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ht6auraTests.swift; sourceTree = "<group>"; };
-		1F50AA3F21323C2500464581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F50AA4421323C2600464581 /* ht6auraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ht6auraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F50AA4821323C2600464581 /* ht6auraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ht6auraUITests.swift; sourceTree = "<group>"; };
-		1F50AA4A21323C2600464581 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F553B9621324640002F7BA6 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsTableViewController.swift; path = Utils/SettingsTableViewController.swift; sourceTree = "<group>"; };
+		1F553B9721324641002F7BA6 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Settings.swift; path = Utils/Settings.swift; sourceTree = "<group>"; };
+		1F553B9821324641002F7BA6 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Utils.swift; path = Utils/Utils.swift; sourceTree = "<group>"; };
+		1F553B9C213246DD002F7BA6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1F553B9E213246EA002F7BA6 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		1F553BA0213246F5002F7BA6 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		1F553BA2213246FF002F7BA6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		1F553BA421324709002F7BA6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1F553BA621324718002F7BA6 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1F553BA821324720002F7BA6 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
+		1F553BAA2132472D002F7BA6 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		3AD591AEE2BD22993FD0F6A4 /* libPods-TwilioVideo-ht6aura.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TwilioVideo-ht6aura.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C760923986F1DD67FEA8CBF0 /* Pods-TwilioVideo-ht6aura.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwilioVideo-ht6aura.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwilioVideo-ht6aura/Pods-TwilioVideo-ht6aura.release.xcconfig"; sourceTree = "<group>"; };
+		D9C49440421404EE74DE23DC /* Pods-TwilioVideo-ht6aura.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwilioVideo-ht6aura.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwilioVideo-ht6aura/Pods-TwilioVideo-ht6aura.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +74,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F553BAB2132472E002F7BA6 /* libc++.tbd in Frameworks */,
+				1F553BA921324720002F7BA6 /* VideoToolbox.framework in Frameworks */,
+				1F553BA721324718002F7BA6 /* AudioToolbox.framework in Frameworks */,
+				1F553BA521324709002F7BA6 /* AVFoundation.framework in Frameworks */,
+				1F553BA321324700002F7BA6 /* CoreTelephony.framework in Frameworks */,
+				1F553BA1213246F5002F7BA6 /* GLKit.framework in Frameworks */,
+				1F553B9F213246EA002F7BA6 /* CoreMedia.framework in Frameworks */,
+				1F553B9D213246DD002F7BA6 /* SystemConfiguration.framework in Frameworks */,
+				0D51A702EAC46BF227563039 /* libPods-TwilioVideo-ht6aura.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +106,13 @@
 		1F50AA1C21323C2300464581 = {
 			isa = PBXGroup;
 			children = (
+				1F553B9721324641002F7BA6 /* Settings.swift */,
+				1F553B9621324640002F7BA6 /* SettingsTableViewController.swift */,
+				1F553B9821324641002F7BA6 /* Utils.swift */,
 				1F50AA2721323C2400464581 /* ht6aura */,
-				1F50AA3C21323C2500464581 /* ht6auraTests */,
-				1F50AA4721323C2600464581 /* ht6auraUITests */,
 				1F50AA2621323C2400464581 /* Products */,
+				875BD89B401D72E31BBE8478 /* Pods */,
+				BA1DCE33D94F799EC566392F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,22 +139,29 @@
 			path = ht6aura;
 			sourceTree = "<group>";
 		};
-		1F50AA3C21323C2500464581 /* ht6auraTests */ = {
+		875BD89B401D72E31BBE8478 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1F50AA3D21323C2500464581 /* ht6auraTests.swift */,
-				1F50AA3F21323C2500464581 /* Info.plist */,
+				D9C49440421404EE74DE23DC /* Pods-TwilioVideo-ht6aura.debug.xcconfig */,
+				C760923986F1DD67FEA8CBF0 /* Pods-TwilioVideo-ht6aura.release.xcconfig */,
 			);
-			path = ht6auraTests;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		1F50AA4721323C2600464581 /* ht6auraUITests */ = {
+		BA1DCE33D94F799EC566392F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1F50AA4821323C2600464581 /* ht6auraUITests.swift */,
-				1F50AA4A21323C2600464581 /* Info.plist */,
+				1F553BAA2132472D002F7BA6 /* libc++.tbd */,
+				1F553BA821324720002F7BA6 /* VideoToolbox.framework */,
+				1F553BA621324718002F7BA6 /* AudioToolbox.framework */,
+				1F553BA421324709002F7BA6 /* AVFoundation.framework */,
+				1F553BA2213246FF002F7BA6 /* CoreTelephony.framework */,
+				1F553BA0213246F5002F7BA6 /* GLKit.framework */,
+				1F553B9E213246EA002F7BA6 /* CoreMedia.framework */,
+				1F553B9C213246DD002F7BA6 /* SystemConfiguration.framework */,
+				3AD591AEE2BD22993FD0F6A4 /* libPods-TwilioVideo-ht6aura.a */,
 			);
-			path = ht6auraUITests;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,9 +171,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F50AA4D21323C2600464581 /* Build configuration list for PBXNativeTarget "ht6aura" */;
 			buildPhases = (
+				D7B7D7B163AF4D4C0053405A /* [CP] Check Pods Manifest.lock */,
 				1F50AA2121323C2400464581 /* Sources */,
 				1F50AA2221323C2400464581 /* Frameworks */,
 				1F50AA2321323C2400464581 /* Resources */,
+				8EB8E032EACFFE81B81BA229 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,11 +292,53 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8EB8E032EACFFE81B81BA229 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TwilioVideo-ht6aura/Pods-TwilioVideo-ht6aura-frameworks.sh",
+				"${PODS_ROOT}/TwilioVideo/Build/iOS/TwilioVideo.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TwilioVideo.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwilioVideo-ht6aura/Pods-TwilioVideo-ht6aura-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D7B7D7B163AF4D4C0053405A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwilioVideo-ht6aura-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F50AA2121323C2400464581 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F553B9921324641002F7BA6 /* SettingsTableViewController.swift in Sources */,
+				1F553B9A21324641002F7BA6 /* Settings.swift in Sources */,
+				1F553B9B21324641002F7BA6 /* Utils.swift in Sources */,
 				1F50AA2B21323C2400464581 /* ViewController.swift in Sources */,
 				1F50AA2921323C2400464581 /* AppDelegate.swift in Sources */,
 			);
@@ -265,7 +348,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F50AA3E21323C2500464581 /* ht6auraTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +355,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F50AA4921323C2600464581 /* ht6auraUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -316,32 +397,32 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = NO;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = NO;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -349,7 +430,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -359,16 +440,21 @@
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				SDKROOT = iphoneos;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "";
+				"SWIFT_ACTIVE_COMPILATION_CONDITIONS[arch=*]" = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -376,32 +462,32 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ANALYZER_NONNULL = YES_NONAGGRESSIVE;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = NO;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = NO;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = NO;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -409,28 +495,38 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL = YES;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
+				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		1F50AA4E21323C2600464581 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9C49440421404EE74DE23DC /* Pods-TwilioVideo-ht6aura.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_COMMA = NO;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = NO;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Y4T82ZQBX;
+				ENABLE_NS_ASSERTIONS = YES;
 				INFOPLIST_FILE = ht6aura/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -438,16 +534,22 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = personal.ht6aura;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		1F50AA4F21323C2600464581 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C760923986F1DD67FEA8CBF0 /* Pods-TwilioVideo-ht6aura.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_WARN_COMMA = NO;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = NO;
+				CLANG_WARN_STRICT_PROTOTYPES = NO;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4Y4T82ZQBX;
+				ENABLE_NS_ASSERTIONS = NO;
 				INFOPLIST_FILE = ht6aura/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -455,7 +557,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = personal.ht6aura;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
